@@ -6,8 +6,8 @@
 		<link rel="icon" href="IMG/css3.ico">
 		<link href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
 		<title>My first approach to CSS3</title> 
 
 			<style>
@@ -27,7 +27,11 @@
 				{
 					color: #4d0099;
 					font-size: xx-large;
-					font-family: 'Carrois Gothic SC', sans-serif;
+					font-family: 'UnifrakturMaguntia', cursive;
+				}
+				h3 a 
+				{
+					color: red;
 				}
 				footer p 
 				{
@@ -38,24 +42,37 @@
 				{
 					color: black;
 					font-size: x-large;
-					font-family: 'Dancing Script', cursive;
+					font-family: 'MedievalSharp', cursive;
 				}
-				.meta-prep 
+				.entry-meta 
 				{
-					font-family: 'Times New Roman';
+					font-style: italic;
 					font-size: small;
 				}
-				.meta-sep
+				.entry-title 
 				{
-					font-family: 'Times New Roman';
-					font-size: small;
+					background-color: #ffd11a;
 				}
-				.author
+				.author 
 				{
-					color: red;
-					font-family: 'Times New Roman';
-					font-size: small;
+					font-style: normal;
 				}
+				#post-5946 
+				{
+					background-color: #ffe6b3;
+				}
+				ul li
+				{
+					color: #990073;
+				}
+				/*.entry-content :first-child {background-color: red} 
+				.entry-content :last-child {background-color: black}
+				ul :nth-child(2) {background-color: #ffcc00}
+				ESEMPIO DI PSEUDO CLASSES*/
+				ul :nth-child(odd) {background-color: #ff751a;}
+				ul :nth-child(even) {background-color: #ffcc00;}	
+				.aside-body p:nth-of-type(odd) {background-color: #ff9999;}
+				.aside-body p:nth-of-type(even) {background-color: #a366ff;}
 			</style>
 		
 	</head>
@@ -70,25 +87,42 @@
 				</div><!-- .entry-meta -->				
 			</section>
 		<section class="entry-content">
-			<p>&nbsp;</p>
 				<p>Very proud to announce my first approach to CSS 3 with the help of
 					<a href="http://www.w3schools.com/">W3Schools</a>
 					<img alt="W3 logo" title="CSS3" src=".\IMG\logo.jpg">
 				</p>
 				<p><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a> is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
 				</p>
+				<p>Here is a couple of books I just read</p>
+					<ul>
+						<li>A Study in Scarlet</li>
+						<li>The Sign of the Four</li>
+						<li>The Hound of the Baskervilles</li>
+						<li>The Valley of Fear</li>
+						<li>The Adventures of Sherlock Holmes</li>
+						<li>The Memoirs of Sherlock Holmes</li>
+						<li>The Return of Sherlock Holmes</li>
+						<li>His Last Bow: Some Later Reminiscences of Sherlock Holmes</li>
+						<li>The Case-Book of Sherlock Holmes</li>
+					</ul>
 		</section>
 		<aside>
 			<section class="aside-header">
-				<h2>Differences between women and men in the Hammer Of Witches (Malleus Maleficarum)</h2>
+				<h2 class="entry-title">Differences between women and men in the Hammer Of Witches (Malleus Maleficarum)</h2>
 			</section>
 
 			<section class="aside-body">
-				The treatise describes how women and men become inclined to practice witchcraft. The text argues that women are more susceptible to demonic temptations through the manifold weaknesses of their gender. It was believed that they were weaker in faith and more carnal than men. Michael Bailey claims that most of the women accused as witches had strong personalities and were known to defy convention by overstepping the lines of proper female decorum. After the publication of the Malleus, it seems as though about three quarters of those individuals prosecuted as witches were women.
-				Witches were usually female. The reasons for this is the suggestion that women are "prone to believing and because the demon basically seeks to corrupt the faith, he assails them in particular." They also have a "temperament towards flux" and "loose tongues". They "are defective in all the powers of both soul and body" and are stated to be more lustful than men. The major reason is that at the foundation of sorcery is denial of faith and "woman, therefore, is evil as a result of nature because she doubts more quickly in the faith." Men could be witches, but were considered rarer, and the reasons were also different. The most common form of male witch mentioned in the book is the sorcerer-archer. The book is rather unclear, but the impetus behind male witches seems to come more from desire for power than from disbelief or lust, as it claims is the case for female witches.
+				<P>The treatise describes how women and men become inclined to practice witchcraft.</P> 
+				<P>The text argues that women are more susceptible to demonic temptations through the manifold weaknesses of their gender. It was believed that they were weaker in faith and more carnal than men.</P> 
+				<P>Michael Bailey claims that most of the women accused as witches had strong personalities and were known to defy convention by overstepping the lines of proper female decorum.</P> 
+				<P>After the publication of the <a href="https://en.wikipedia.org/wiki/Malleus_Maleficarum">Malleus</a>, it seems as though about three quarters of those individuals prosecuted as witches were women.</P>
+				<P>Witches were usually female. The reasons for this is the suggestion that women are "prone to believing and because the demon basically seeks to corrupt the faith, he assails them in particular." They also have a "temperament towards flux" and "loose tongues". They "are defective in all the powers of both soul and body" and are stated to be more lustful than men. The major reason is that at the foundation of sorcery is denial of faith and "woman, therefore, is evil as a result of nature because she doubts more quickly in the faith."</P> 
+				<P>Men could be witches, but were considered rarer, and the reasons were also different. The most common form of male witch mentioned in the book is the sorcerer-archer. The book is rather unclear, but the impetus behind male witches seems to come more from desire for power than from disbelief or lust, as it claims is the case for female witches.</P>
 			</section>
 		</aside>
 		</article>
+		<hr />
+		<h3><a href=".\tools.htm">List of CSS3’s tools</a></h3>
 		<footer class="footer">
 			<p>Copyright 2017 Yogi Bear</p>
 		</footer>
