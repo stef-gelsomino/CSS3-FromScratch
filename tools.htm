@@ -3,6 +3,7 @@
 <head>
 	<title>CSS3’s tools</title>
 	<link rel="icon" href="IMG/css3.ico">
+	<link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
 	<style type="text/css">
 		body 
 		{
@@ -11,6 +12,12 @@
 		.textcolor 
 		{
 			color: #b34700;
+		}
+		span a
+		{
+			font-family: 'Modern Antiqua', cursive;
+			font-size: 20px;
+			color: red;
 		}
 	</style>
 </head>
@@ -33,7 +40,7 @@
 		<h1>Pseudo Classes</h1>
 		<ul>
 			<li>First Child</li>
-				<p><dd>TS or CS or IDS or NS :first-child {attribute}</dd></p>
+				<p><dd>TS or CS or IDS or NS:first-child {attribute}</dd></p>
 			<li>Last Child</li>
 				<p><dd>TS or CS or IDS or NS:last-child {attribute}</dd></p>
 			<li>Nth Child</li>
@@ -63,6 +70,94 @@
 		<h1>Specificity Rule</h1>
 		<img src="IMG/specifRule.png" style="width:1140px;height:628px;">
 		<p>Vedi esempio "Here is a couple of books I just read" nella main page: ispezionando l’oggetto ci si accorge che prende il colore viola dall’ID "bookList" piuttosto che il colore nero ereditato dal selettore paragrafo. Il valore di specificità del selettore paragrafo è infatti pari ad 1 mentre quello del selettore ID è pari a 100. Il selettore ID è più specifico del selettore paragrafo e darà quindi l’attributo all’oggetto in questione.</p>
+
+		<h1>Fonts</h1>
+
+		<h3>Serif Fonts (paragraph, reading)</h3>
+		<div>
+		<table border="1">
+		<tr>
+		<th style="width:55%">font-family</th>
+		<th>Example text</th>
+		</tr>
+		<tr>
+		<td>Georgia, serif</td>
+		<td><h2 style="margin-top:0px;font-family: Georgia, serif">This is a heading</h2><p style="margin-bottom:0px;font-family: Georgia, serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Palatino Linotype&quot;, &quot;Book Antiqua&quot;, Palatino, serif</td>
+		<td><h2 style="margin-top:0px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Times New Roman&quot;, Times, serif</td>
+		<td><h2 style="margin-top:0px;font-family: 'Times New Roman', Times, serif">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Times New Roman', Times, serif">This is a paragraph</p></td>
+		</tr>
+		</table>
+		</div>
+		<h3>Sans-Serif Fonts (headlines)</h3>
+		<div>
+		<table border="1">
+		<tr>
+		<th style="width:55%">font-family</th>
+		<th>Example text</th>
+		</tr>
+		<tr>
+		<td>Arial, Helvetica, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: Arial, Helvetica, sans-serif;">This is a heading</h2><p style="margin-bottom:0px;font-family: Arial, Helvetica, sans-serif;">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Arial Black&quot;, Gadget, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: Arial Black, Gadget, sans-serif;font-weight:normal;">This is a heading</h2><p style="margin-bottom:0px;font-family: Arial Black, Gadget, sans-serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Comic Sans MS&quot;, cursive, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: 'Comic Sans MS', cursive, sans-serif">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Comic Sans MS', cursive, sans-serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>Impact, Charcoal, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: Impact, Charcoal, sans-serif;font-weight:normal">This is a heading</h2><p style="margin-bottom:0px;font-family: Impact, Charcoal, sans-serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Lucida Sans Unicode&quot;, &quot;Lucida Grande&quot;, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>Tahoma, Geneva, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: Tahoma, Geneva, sans-serif">This is a heading</h2><p style="margin-bottom:0px;font-family: Tahoma, Geneva, sans-serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Trebuchet MS&quot;, Helvetica, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: 'Trebuchet MS', Helvetica, sans-serif">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Trebuchet MS', Helvetica, sans-serif">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>Verdana, Geneva, sans-serif</td>
+		<td><h2 style="margin-top:0px;font-family: Verdana, Geneva, sans-serif">This is a heading</h2><p style="margin-bottom:0px;font-family: Verdana, Geneva, sans-serif">This is a paragraph</p></td>
+		</tr>
+		</table>
+		</div>
+		<h3>Monospace Fonts (coding)</h3>
+		<div>
+		<table border="1">
+		<tr>
+		<th style="width:55%">font-family</th>
+		<th>Example text</th>
+		</tr>
+		<tr>
+		<td>&quot;Courier New&quot;, Courier, monospace</td>
+		<td><h2 style="margin-top:0px;font-family: 'Courier New', Courier, monospace">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Courier New', Courier, monospace">This is a paragraph</p></td>
+		</tr>
+		<tr>
+		<td>&quot;Lucida Console&quot;, Monaco, monospace</td>
+		<td><h2 style="margin-top:0px;font-family: 'Lucida Console', Monaco, monospace">This is a heading</h2><p style="margin-bottom:0px;font-family: 'Lucida Console', Monaco, monospace">This is a paragraph</p></td>
+		</tr>
+		</table>
+		</div>
+
+		<p>In alternativa è possibile utilizzare i font gratuiti di Google disponibili all’indirizzo <span><a href="https://fonts.google.com/" target="_blank">https://fonts.google.com</a></span>.</p>
+
+		<h1>Formattazione del testo</h1>
+		<img src="IMG/textFormat.png" style="width:540px;height:628px;">
+		<p>Vedi esempi relativi ai paragrafi 5 e 6 del Malleus Maleficarum.</p>
 
 		<a href=".\index.htm">Back to main page</a>
 </body>
