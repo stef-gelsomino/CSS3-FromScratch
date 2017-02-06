@@ -2,8 +2,19 @@
 <html>
 <head>
 	<title>CSS3’s tools</title>
+	<link rel="icon" href="IMG/css3.ico">
+	<style type="text/css">
+		body 
+		{
+			background-color: #0d0d0d;
+		}
+		.textcolor 
+		{
+			color: #b34700;
+		}
+	</style>
 </head>
-<body>
+<body class="textcolor">
 
 		<h1>Selectors</h1>
 		<ul>
@@ -16,6 +27,8 @@
 			<li>Nasted Selectors (NS)</li>
 				<p><dd>Examples: ul li, .NameOfTheClass p, etc...</dd></p>
 		</ul>
+
+		<br />
 
 		<h1>Pseudo Classes</h1>
 		<ul>
@@ -39,6 +52,17 @@
 				<p><dd>:not</dd></p>
 		</ul>
 
+		<br />
+
+		<h1>Inheritance</h1>
+		<p>Per controllare gli attributi di un elemento qualsiasi di una pagina web e, soprattutto, per controllare da dove questi attributi provengono (Inheritance), basta cliccare col tasto destro del mouse sull’oggetto stesso e poi su "Ispeziona". Si aprirà così una finestra a destra della quale, nella sezione "Styles", sarà possibile visionare tutti gli attributi e la loro "discendenza" (alcuni possono essere anche deselezionati direttamente in finestra).</p>
+		<p>N.B. -->  Se un tag ha un attributo specifico, diverso da quello che eredita invece per discendenza (conflitto), il browser visualizzerà il tag specifico; se il conflitto riguarda due "Ancestors", invece, il browser visualizzerà l’attributo dell’antenato più vicino; bisogna inoltre tenere presente che alcuni tag (come ad esempio: placements tags, margins, borders, background colors, etc...) non sono ereditabili.</p>
+
+		<br />
+
+		<h1>Specificity Rule</h1>
+		<img src="IMG/specifRule.png" style="width:1140px;height:628px;">
+		<p>Vedi esempio "Here is a couple of books I just read" nella main page: ispezionando l’oggetto ci si accorge che prende il colore viola dall’ID "bookList" piuttosto che il colore nero ereditato dal selettore paragrafo. Il valore di specificità del selettore paragrafo è infatti pari ad 1 mentre quello del selettore ID è pari a 100. Il selettore ID è più specifico del selettore paragrafo e darà quindi l’attributo all’oggetto in questione.</p>
 
 		<a href=".\index.htm">Back to main page</a>
 </body>
