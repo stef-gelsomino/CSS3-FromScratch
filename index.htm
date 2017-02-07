@@ -8,6 +8,8 @@
 		<link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bahiana" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 		<title>My first approach to CSS3</title> 
 
 			<style>
@@ -41,8 +43,10 @@
 				}
 				footer 
 				{
+
 					padding-left: 8px;
 					padding-right: 8px;
+					border-top: 3px solid rgb(75,75,75);
 				}
 				footer p 
 				{
@@ -124,15 +128,73 @@
 					word-spacing: 4px;
 					line-height: 70%;
 				}
-				img 
+				#bookList img
 				{
-					height: 50px;
-					width: 200px;
+					margin-bottom: -5px;
+					height: 40px;
+					width: 150px;
+					border-radius: 150px;
+	                -webkit-border-radius: 150px;
+	                -moz-border-radius: 150px;
+				}
+				.sidebar img
+				{
+					height: 200px;
+					width: 170px;
+				}
+				.sidebar 
+				{
+					float: right;
+					width: 170px;
+					height: 1480px;
+					padding: 5px;
+					background-color: ;
+					border-left: 3px solid rgb(75,75,75);
+				}
+				.sidebar section:first-of-type h2 
+				{
+					font-family: 'Bahiana', cursive;
+					font-size: 400%;
+					color: red;#
+				}
+				.sidebar section:first-of-type h2:last-of-type 
+				{
+					text-align: right;
+					margin-top: -85px;
+				}
+				.sidebar section:first-of-type h2:nth-of-type(2)
+				{
+					margin-top: -85px;
+					text-align: center;
+				}
+				.sidebar section:last-of-type p 
+				{
+					font-family: 'Slabo 27px', serif;
+					font-size: 90%;
+					text-align: justify;
+					color: black;
+				}
+				.mainSection 
+				{
+					margin-right: 180px;
 				}
 			</style>
 		
 	</head>
 	<body class="wholePage">
+		<aside class="sidebar">
+			<section>
+				<h2>About</h2> <h2>Sherlock</h2> <h2>Holmes</h2>	
+			</section>
+			<section>
+				<p>Sherlock Holmes is a fictional private detective created by British author Sir Arthur Conan Doyle. Known as a "consulting detective" in the stories, Holmes is known for a proficiency with observation, forensic science, and logical reasoning that borders on the fantastic, which he employs when investigating cases for a wide variety of clients, including Scotland Yard.</p>
+				<img src="./IMG/holmes.jpg">
+				<p>First appearing in print in 1887 (in A Study in Scarlet), the character's popularity became widespread with the first series of short stories in The Strand Magazine, beginning with "A Scandal in Bohemia" in 1891; additional tales appeared from then to 1927, eventually totalling four novels and 56 short stories. All but one are set in the Victorian or Edwardian periods, taking place between about 1880 to 1914. Most are narrated by the character of Holmes's friend and biographer Dr. Watson, who usually accompanies Holmes during his investigations and often shares quarters with him at the address of 221B Baker Street, London, where many of the stories begin.
+
+				Though not the first fictional detective, Sherlock Holmes is arguably the most well-known, with Guinness World Records listing him as the "most portrayed movie character" in history. Holmes's popularity and fame are such that many have believed him to be not a fictional character but a real individual; numerous literary and fan societies have been founded that pretend to operate on this principle. Widely considered a British cultural icon.</p>
+			</section>
+		</aside>
+	<div class="mainSection">
 		<article id="post-5946">
 			<section id="post-5946-header">
 				<h1 class="entry-title">CSS3 From Scratch</h1>
@@ -144,12 +206,13 @@
 			</section>
 		<section class="entry-content" id="bookList">
 				<p>Very proud to announce my first approach to CSS 3 with the help of
-					<a href="http://www.w3schools.com/" target="_blank">W3Schools</a>
-					<img alt="W3 logo" title="CSS3" src=".\IMG\logo.jpg">
+					<a href="http://www.w3schools.com/" target="_blank">
+						<img alt="W3 logo" title="CSS3" src=".\IMG\logo.jpg">
+					</a>
 				</p>
 				<p><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS3</a> is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
 				</p>
-				<p>Here is a couple of books I just read</p>
+				<p>Here is a couple of books of the Sherlock Holmes’ series I just read</p>
 					<ul>
 						<li>A Study in Scarlet</li>
 						<li>The Sign of the Four</li>
@@ -177,6 +240,7 @@
 			</section>
 		</aside>
 		</article>
+	</div>
 		<footer class="footer">
 			<h3><a href=".\tools.htm">List of CSS3’s tools</a></h3>
 			<p>Copyright 2017 Yogi Bear</p>
