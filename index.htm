@@ -22,6 +22,12 @@
 					color: #ff8533;
 					font-size: xx-large;
 					font-family: 'Barrio', cursive;
+					text-align: center;
+					padding: 10px;
+					margin: -35px 0px 2px -50px;
+					width: 300px;
+					border: 3px solid rgb(75,75,75);
+    				box-shadow: 0 0 100px 10px rgba(255,51,0,.75);
 				}
 				h2
 				{
@@ -31,12 +37,18 @@
 				}
 				h3 a 
 				{
-					color: red;
+					color: #800000;
+				}
+				footer 
+				{
+					padding-left: 8px;
+					padding-right: 8px;
 				}
 				footer p 
 				{
 					font-family: 'Times New Roman';
 					font-size: small;
+					text-align: right;
 				}
 				.aside-body 
 				{
@@ -60,6 +72,15 @@
 				#post-5946 
 				{
 					background-color: #ffe6b3;
+					padding-top: 10px;
+					padding-bottom: 6px;
+					padding-left: 8px;
+					padding-right: 8px;
+				}
+				footer 
+				{
+					background-color: #9494b8;
+					margin: -20px 0px -13px 0px;
 				}
 				ul li
 				{
@@ -73,12 +94,14 @@
 				ul :nth-child(even) {background-color: #ffcc00;}	
 				.aside-body p:nth-of-type(odd) {background-color: #ff9999;}
 				.aside-body p:nth-of-type(even) {background-color: #a366ff;}
-				#bodymar 
+				.wholePage 
 				{
-    				margin-top: 10px;
-   					margin-bottom: 10px;
-    				margin-right: 10px;
-    				margin-left: 10px;
+    				margin-top: 50px;
+    				margin-left: auto;
+    				margin-right: auto;
+    				width: 1500px;
+    				border: 3px solid rgb(75,75,75);
+    				box-shadow: 0 0 15px 5px rgba(179,71,0,.75);
 				}
 				#bookList p:nth-of-type(3) {color: #7300e6;}
 				aside p:nth-of-type(5)
@@ -101,10 +124,15 @@
 					word-spacing: 4px;
 					line-height: 70%;
 				}
+				img 
+				{
+					height: 50px;
+					width: 200px;
+				}
 			</style>
 		
 	</head>
-	<body id="bodymar">
+	<body class="wholePage">
 		<article id="post-5946">
 			<section id="post-5946-header">
 				<h1 class="entry-title">CSS3 From Scratch</h1>
@@ -116,10 +144,10 @@
 			</section>
 		<section class="entry-content" id="bookList">
 				<p>Very proud to announce my first approach to CSS 3 with the help of
-					<a href="http://www.w3schools.com/">W3Schools</a>
+					<a href="http://www.w3schools.com/" target="_blank">W3Schools</a>
 					<img alt="W3 logo" title="CSS3" src=".\IMG\logo.jpg">
 				</p>
-				<p><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a> is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+				<p><a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="_blank">CSS3</a> is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
 				</p>
 				<p>Here is a couple of books I just read</p>
 					<ul>
@@ -143,15 +171,14 @@
 				<P>The treatise describes how women and men become inclined to practice witchcraft.</P> 
 				<P>The text argues that women are more susceptible to demonic temptations through the manifold weaknesses of their gender. It was believed that they were weaker in faith and more carnal than men.</P> 
 				<P>Michael Bailey claims that most of the women accused as witches had strong personalities and were known to defy convention by overstepping the lines of proper female decorum.</P> 
-				<P>After the publication of the <a href="https://en.wikipedia.org/wiki/Malleus_Maleficarum">Malleus</a>, it seems as though about three quarters of those individuals prosecuted as witches were women.</P>
+				<P>After the publication of the <a href="https://en.wikipedia.org/wiki/Malleus_Maleficarum" target="_blank">Malleus</a>, it seems as though about three quarters of those individuals prosecuted as witches were women.</P>
 				<P>Witches were usually female. The reasons for this is the suggestion that women are "prone to believing and because the demon basically seeks to corrupt the faith, he assails them in particular." They also have a "temperament towards flux" and "loose tongues". They "are defective in all the powers of both soul and body" and are stated to be more lustful than men. The major reason is that at the foundation of sorcery is denial of faith and "woman, therefore, is evil as a result of nature because she doubts more quickly in the faith."</P> 
 				<P>Men could be witches, but were considered rarer, and the reasons were also different. The most common form of male witch mentioned in the book is the sorcerer-archer. The book is rather unclear, but the impetus behind male witches seems to come more from desire for power than from disbelief or lust, as it claims is the case for female witches.</P>
 			</section>
 		</aside>
 		</article>
-		<hr />
-		<h3><a href=".\tools.htm">List of CSS3’s tools</a></h3>
 		<footer class="footer">
+			<h3><a href=".\tools.htm">List of CSS3’s tools</a></h3>
 			<p>Copyright 2017 Yogi Bear</p>
 		</footer>
 	</body>
