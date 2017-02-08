@@ -139,22 +139,23 @@
 				}
 				.sidebar img
 				{
-					height: 200px;
-					width: 170px;
+					height: 190px;
+					width: 157px;
 				}
 				.sidebar 
 				{
 					float: right;
+					overflow: scroll;
 					width: 170px;
-					height: 1480px;
-					padding: 5px;
+					height: 1488px;
+					padding: 4px;
 					background-color: ;
 					border-left: 3px solid rgb(75,75,75);
 				}
 				.sidebar section:first-of-type h2 
 				{
 					font-family: 'Bahiana', cursive;
-					font-size: 400%;
+					font-size: 390%;
 					color: red;#
 				}
 				.sidebar section:first-of-type h2:last-of-type 
@@ -178,6 +179,33 @@
 				{
 					margin-right: 180px;
 				}
+				.menu 
+				{
+					list-style-type: none;
+					padding-left: 0;
+					margin-left: 0;
+					
+				}
+				.menu li 
+				{
+					background: #ffd11a;
+					display: inline;
+				}
+				.menu a 
+				{
+					background-color: #ffd11a;
+					font-family: 'Barrio', cursive;
+					color: #ff8533;
+					display: inline-block;
+					border: 2px solid #000;
+					padding: 2px 10px 2px 10px;
+					text-decoration: none;
+				}
+				#navBar 
+				{
+					position: absolute;
+					margin: 10px 0px 0px 800px;
+				}
 			</style>
 		
 	</head>
@@ -194,6 +222,17 @@
 				Though not the first fictional detective, Sherlock Holmes is arguably the most well-known, with Guinness World Records listing him as the "most portrayed movie character" in history. Holmes's popularity and fame are such that many have believed him to be not a fictional character but a real individual; numerous literary and fan societies have been founded that pretend to operate on this principle. Widely considered a British cultural icon.</p>
 			</section>
 		</aside>
+
+	<div id="navBar">	
+		<ul class="menu">
+			<li><a href="./index.htm">Home</a></li>
+			<li><a href="./tools.htm">List of CSS3’s tools</a></li>
+			<li><a href="./books.htm">Books</a></li>
+			<li><a href="./guitars.htm">Guitars</a></li>
+			<li><a href="./pipes.htm">Pipes</a></li>
+		</ul>
+	</div>
+
 	<div class="mainSection">
 		<article id="post-5946">
 			<section id="post-5946-header">
@@ -205,6 +244,8 @@
 				</div><!-- .entry-meta -->				
 			</section>
 		<section class="entry-content" id="bookList">
+		<br />
+		<br />
 				<p>Very proud to announce my first approach to CSS 3 with the help of
 					<a href="http://www.w3schools.com/" target="_blank">
 						<img alt="W3 logo" title="CSS3" src=".\IMG\logo.jpg">
@@ -242,7 +283,6 @@
 		</article>
 	</div>
 		<footer class="footer">
-			<h3><a href=".\tools.htm">List of CSS3’s tools</a></h3>
 			<p>Copyright 2017 Yogi Bear</p>
 		</footer>
 	</body>
